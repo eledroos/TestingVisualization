@@ -3,7 +3,7 @@
 <html>
   <head>
     <script src="{{asset "d3.v4.min.js"}}"></script>
-    <link rel="stylesheet" type="text/css" href="policestyle.css" />
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/eledroos/TestingVisualization/master/policestyle.css" />
   </head>
   <body>
     <script>
@@ -41,7 +41,7 @@ var svg = d3.select("body").append("svg")
           "translate(" + margin.left + "," + margin.top + ")");
 
 // get the data
-d3.csv("policedata.csv", function(error, data) {
+d3.csv("https://raw.githubusercontent.com/eledroos/TestingVisualization/master/policedata.csv", function(error, data) {
   if (error) throw error;
 
   // format the data
